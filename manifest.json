@@ -1,7 +1,8 @@
 {
-  "domain": "google_geocode",
-  "name": "Google Geocode",
-  "documentation": "https://github.com/michaelmcarthur/GoogleGeocode-HASS",
+  "domain": "vworld_geocode",
+  "name": "Vworld Geocode",
+  "version": "0.1",
+  "documentation": "https://github.com/djnoh/VworldGeocode-HASS",
   "dependencies": [],
   "codeowners": [],
   "requirements": []
