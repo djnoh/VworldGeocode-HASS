@@ -189,8 +189,10 @@ class VworldGeocode(Entity):
             results = decoded["response"]
             if results["status"] == "OK":
                 for result in results["result"]:
-                    if result["type"] == "road" or (result["type"] == "parcel" and select == ''):
-                        select = result["type"]
+                    if result["type"] == "road": 
+                        select = "road"
+                    elif result["type"] == "parcel" and select != "road":
+                        select = "parcel"
                 for result in results["result"]:
                     if result["type"] == select:        # road or parcel
                         self._postal_code               = postal_code = result["zipcode"]
